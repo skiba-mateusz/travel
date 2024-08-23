@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Travel</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#">
+            <img src="./assets/logo.png" alt="Travel" />
+          </a>
+          <button
+            class="btn btn--icon btn--secondary btn--nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle primary navigation</span>
+            <i class="bx bx-menu" aria-hidden="true"></i>
+            <i class="bx bx-x" aria-hidden="true"></i>
+          </button>
+          <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+            <ul class="nav__list" role="list">
+              <li class="nav__item">
+                <a class="nav__link" href="#about">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#offer">Offer</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav__item">
+                <button class="btn btn--secondary btn--open-modal mx-auto">
+                  Contact Us
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="progress-bar" aria-hidden="true"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__img">
+        <img
+          class="lazy-img"
+          src="./assets/hero-lazy.jpg"
+          srcset="./assets/hero.jpg"
+          alt=""
+        />
+      </div>
+      <div class="hero__group">
+        <h1 class="hero__title">
+          Travel <span class="highlight">Arround</span> The
+          <span class="highlight">World</span>
+        </h1>
+        <h2 class="hero__subtitle">
+          Discover And Immerse Yourself In Stunning Places
+        </h2>
+      </div>
+      <div class="hero__panel">
+        <p class="hero__description">
+          Explore handpicked destinations with personalized travel plans and
+          exclusive offers. Your adventure begins here!
+        </p>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about" class="section | py-700">
+        <div class="container">
+          <div class="even-columns py-300">
+            <img
+              src="./assets/team-lazy.png"
+              srcset="./assets/team.png"
+              class="lazy-img"
+              alt=""
+            />
+            <div class="flow">
+              <div>
+                <p class="section__eyebrow | text-center fw-500">our team</p>
+                <h2 class="section__title | heading fw-600 fs-h2">
+                  <span>Let’s get to know us</span>
+                </h2>
+              </div>
+              <p class="text-neutral-700 text-justify">
+                We are long running company that helps people to find their
+                dream destination. With many years of experience and talented,
+                passionate group of people, we are dedicated to creating
+                unforgettable journeys suited to your prefrences.
+              </p>
+            </div>
+          </div>
+          <div class="even-columns even-columns--reversed py-300">
+            <img
+              src="./assets/customer-lazy.png"
+              srcset="./assets/customer.png"
+              class="lazy-img"
+              alt=""
+            />
+            <div class="flow">
+              <div>
+                <p class="section__eyebrow | text-center fw-500">Our mission</p>
+                <h2 class="section__title | heading fw-600 fs-h2">
+                  <span>Customer satisfaction</span>
+                </h2>
+              </div>
+              <p class="text-neutral-700 text-justify">
+                At our company, your satisfaction and joy is our main priority.
+                We believe travel is not just moving from one point to other,
+                it’s about creating memories that last lifetime. Choose us and
+                make your next trip the best one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="offer" class="section | py-700">
+        <div class="container flow" style="--flow-spacer: 2rem">
+          <div>
+            <p class="section__eyebrow | text-center fw-500">Offers</p>
+            <h2 class="section__title | heading fw-600 fs-h2">
+              Check our offer
+            </h2>
+          </div>
+          <ul class="offers" role="list">
+            <li>
+              <article class="offer">
+                <a href="#">
+                  <div class="offer__img">
+                    <img
+                      src="./assets/thailand-lazy.jpg"
+                      srcset="./assets/thailand.jpg"
+                      alt="Ao Nang, Thailand"
+                      class="lazy-img"
+                    />
+                  </div>
+                  <span class="offer__bestseller">Bestseller</span>
+                  <div class="offer__content flow" style="--flow-spacer: 1em">
+                    <h3 class="offer__title">Ao Nang, Thailand</h3>
+                    <div class="offer__rating">
+                      <span class="visually-hidden"
+                        >Rated 4.7 out of 5 stars based on 3451 opinions</span
+                      >
+                      <span class="offer__rating-score" aria-hidden="true"
+                        >4.7</span
+                      >
+                      <div class="offer__opinions" aria-hidden="true">
+                        3451 opinions
+                      </div>
+                    </div>
+                    <p class="offer__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni rem pariatur debitis ex fuga maiores delectus
+                      reiciendis iste vel ad!
+                    </p>
+                    <div class="offer__price">
+                      <span class="offer__price-original">
+                        <span class="visually-hidden">Original price is</span>
+                        <span>$900</span>
+                      </span>
+                      <span class="visually-hidden">Discounted price is</span>
+                      <span class="offer__price-discount">$800</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <article class="offer">
+                <a href="#">
+                  <div class="offer__img">
+                    <img
+                      src="./assets/mexico-lazy.jpg"
+                      srcset="./assets/mexico.jpg"
+                      class="lazy-img"
+                      alt="El Porvenir, Mexico"
+                    />
+                  </div>
+                  <span class="offer__bestseller">Bestseller</span>
+                  <div class="offer__content | flow" style="--flow-spacer: 1em">
+                    <h3 class="offer__title">El Porvenir, Mexico</h3>
+                    <div class="offer__rating">
+                      <span class="visually-hidden">
+                        Rated 4.9 out of 5 stars based on 1875 opinions</span
+                      >
+                      <span class="offer__rating-score" aria-hidden="true">
+                        4.9</span
+                      >
+                      <span class="offer__opinions" aria-hidden="true">
+                        1875 opinions
+                      </span>
+                    </div>
+                    <p class="offer__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni rem pariatur debitis ex fuga maiores delectus
+                      reiciendis iste vel ad!
+                    </p>
+                    <div class="offer__price">
+                      <span class="offer__price-original">
+                        <span class="visually-hidden">Original price is</span>
+                        <span>$800</span>
+                      </span>
+                      <span class="visually-hidden">Discounted price is</span>
+                      <span class="offer__price-discount">$600</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <article class="offer">
+                <a href="#">
+                  <div class="offer__img">
+                    <img
+                      src="./assets/costa-rica-lazy.jpg"
+                      srcset="./assets/costa-rica.jpg"
+                      class="lazy-img"
+                      alt=""
+                    />
+                  </div>
+                  <span class="offer__bestseller">Bestseller</span>
+                  <div class="offer__content | flow" style="--flow-spacer: 1em">
+                    <h3 class="offer__title">Alajuela, Costa Rica</h3>
+                    <div class="offer__rating">
+                      <span class="offer__rating-score" aria-hidden="true">
+                        4.4</span
+                      >
+                      <span class="offer__opinions">2099 opinions</span>
+                    </div>
+                    <p class="offer__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni rem pariatur debitis ex fuga maiores delectus
+                      reiciendis iste vel ad!
+                    </p>
+                    <div class="offer__price">
+                      <span class="offer__price-original">
+                        <span class="visually-hidden">Original price is</span>
+                        <span>$900</span>
+                      </span>
+                      <span class="visually-hidden">Discounted price is</span>
+                      <span class="offer__price-discount">$700</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section | py-700">
+        <div class="container | flow" style="--flow-spacer: 2rem">
+          <div>
+            <p class="section__eyebrow | text-center">Testimonials</p>
+            <h2 class="section__title | heading fw-600 fs-h2">
+              <span>What clients say</span>
+            </h2>
+          </div>
+          <div class="carousel" role="region" aria-label="User Testimonials">
+            <div class="carousel__inner">
+              <div
+                id="testimonial-1"
+                class="carousel__item"
+                role="group"
+                aria-roledescription="slide"
+              >
+                <article class="testimonial | flow">
+                  <div class="testimonial__profile">
+                    <img src="./assets/user-1.jpg" alt="Jane Doe avatar" />
+                  </div>
+                  <h3 class="testimonial__user">Jane Doe</h3>
+                  <div class="testimonial__rating">
+                    <div aria-hidden="true">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <span class="visually-hidden">5 out of 5 stars</span>
+                  </div>
+                  <blockquote class="testimonial__quote">
+                    Exceptional experience from start to finish! The agency made
+                    my travel planning stress-free and enjoyable. Their
+                    attention to detail and customer service is top-notch. I’ll
+                    definitely be booking my future trips with them.
+                  </blockquote>
+                </article>
+              </div>
+              <div
+                id="testimonial-2"
+                class="carousel__item"
+                role="group"
+                aria-roledescription="slide"
+              >
+                <article class="testimonial | flow">
+                  <div class="testimonial__profile">
+                    <img src="./assets/user-2.jpg" alt="Marcus Smith avatar" />
+                  </div>
+                  <h3 class="testimonial__user">Marcus Smith</h3>
+                  <div class="testimonial__rating">
+                    <div aria-hidden="true">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <span class="visually-hidden">5 out of 5 stars</span>
+                  </div>
+                  <blockquote class="testimonial__quote">
+                    Highly impressed with the professionalism and efficiency of
+                    this agency. They went above and beyond to cater to my
+                    preferences and ensure a seamless travel experience. I
+                    couldn’t ask for better service!
+                  </blockquote>
+                </article>
+              </div>
+              <div
+                id="testimonial-3"
+                class="carousel__item"
+                role="group"
+                aria-roledescription="slide"
+              >
+                <article class="testimonial | flow">
+                  <div class="testimonial__profile">
+                    <img src="./assets/user-3.jpg" alt="Jarell Jones avatar" />
+                  </div>
+                  <h3 class="testimonial__user">Jarell Jones</h3>
+                  <div class="testimonial__rating">
+                    <div aria-hidden="true">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <span class="visually-hidden">5 out of 5 stars</span>
+                  </div>
+                  <blockquote class="testimonial__quote">
+                    Fantastic service and a truly reliable team! They understood
+                    exactly what I wanted and made the entire process smooth and
+                    hassle-free. I’ll be returning here for all my travel needs
+                    without a doubt.
+                  </blockquote>
+                </article>
+              </div>
+            </div>
+            <div class="carousel__nav">
+              <button
+                class="carousel__btn-nav carousel__btn-nav--prev btn btn--icon"
+              >
+                <i class="bx bxs-chevron-left" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous slide</span>
+              </button>
+              <button
+                class="carousel__btn-nav carousel__btn-nav--next btn btn--icon"
+              >
+                <i class="bx bxs-chevron-right" aria-hidden="true"></i>
+                <span class="visually-hidden">Next slide</span>
+              </button>
+            </div>
+            <ol class="carousel__indicators" role="list">
+              <li>
+                <button
+                  class="carousel__btn-indicator btn"
+                  data-slide="0"
+                  aria-controls="testimonial-1"
+                >
+                  <span class="visually-hidden">Go to slide 1</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="carousel__btn-indicator btn"
+                  data-slide="1"
+                  aria-controls="testimonial-2"
+                >
+                  <span class="visually-hidden">Go to slide 2</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="carousel__btn-indicator btn"
+                  data-slide="2"
+                  aria-controls="testimonial-3"
+                >
+                  <span class="visually-hidden">Go to slide 3</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section | py-700">
+        <div class="container | flow" style="--flow-spacer: 2rem">
+          <div>
+            <p class="section__eyebrow | text-center">FAQ</p>
+            <h2 class="section__title | heading fw-600 fs-h2">
+              <span>How it works?</span>
+            </h2>
+          </div>
+          <div class="tabs">
+            <ul class="tabs__list" role="tablist">
+              <li class="tabs__item" role="presentation">
+                <button
+                  id="booking-tab"
+                  class="tabs__btn btn"
+                  role="tab"
+                  aria-controls="booking"
+                >
+                  Booking
+                </button>
+              </li>
+              <li class="tabs__item" role="presentation">
+                <button
+                  id="payment-tab"
+                  class="tabs__btn btn"
+                  role="tab"
+                  aria-controls="payment"
+                >
+                  Payment
+                </button>
+              </li>
+              <li class="tabs__item" role="presentation">
+                <button
+                  id="insurance-tab"
+                  class="tabs__btn btn"
+                  role="tab"
+                  aria-controls="insurance"
+                >
+                  Insurance
+                </button>
+              </li>
+            </ul>
+            <div>
+              <div
+                id="booking"
+                class="tabs__panel | text-wide"
+                role="tabpanel"
+                aria-labelledby="booking-tab"
+              >
+                <div class="tabs__header">
+                  <h3 class="tabs__title">Booking</h3>
+                </div>
+                <div
+                  class="tabs__content | flow text-justify text-neutral-700"
+                  style="--flow-spacer: 1rem"
+                >
+                  <p>
+                    Our booking process is designed to be simple and
+                    straightforward, ensuring that you can reserve your desired
+                    services in just a few clicks. Whether you're planning a
+                    vacation, a business trip, or a special event, we offer a
+                    variety of options to suit your needs.
+                  </p>
+                  <ul class="flow" role="list">
+                    <li>
+                      <span class="fw-500">Step 1:</span> Select your desired
+                      service and choose the dates that work best for you.
+                    </li>
+                    <li>
+                      <span class="fw-500">Step 2:</span> Provide your personal
+                      information and any special requests or requirements.
+                    </li>
+                    <li>
+                      <span class="fw-500">Step 3:</span> Review your booking
+                      details and confirm your reservation.
+                    </li>
+                  </ul>
+                  <p>
+                    Once your booking is confirmed, you'll receive an email with
+                    all the necessary details, including a confirmation number
+                    and a summary of your reservation. If you need to make any
+                    changes, our customer service team is available to assist
+                    you.
+                  </p>
+                </div>
+              </div>
+              <div
+                id="payment"
+                class="tabs__panel | text-wide"
+                role="tabpanel"
+                aria-labelledby="payment-tab"
+              >
+                <header class="tabs__header">
+                  <h3 class="tabs__title">Payment</h3>
+                </header>
+                <div
+                  class="tabs__content | flow text-justify text-neutral-700"
+                  style="--flow-spacer: 1rem"
+                >
+                  <p>
+                    We offer a variety of secure payment options to make the
+                    process as smooth as possible. Your financial information is
+                    protected with top-of-the-line security measures.
+                  </p>
+                  <ul class="flow" role="list">
+                    <li>
+                      <span class="fw-500">Step 1:</span> Select your preferred
+                      payment method, including credit card, debit card, or
+                      digital wallets.
+                    </li>
+                    <li>
+                      <span class="fw-500">Step 2:</span> Enter your payment
+                      details and billing information.
+                    </li>
+                    <li>
+                      <span class="fw-500">Step 3:</span> Review the payment
+                      summary and confirm the transaction.
+                    </li>
+                  </ul>
+                  <p>
+                    Upon successful payment, you'll receive a receipt via email.
+                    If you encounter any issues or require assistance, our
+                    customer service team is here to help.
+                  </p>
+                </div>
+              </div>
+              <div
+                id="insurance"
+                class="tabs__panel | text-wide"
+                role="tabpanel"
+                aria-labelledby="insurance-tab"
+              >
+                <div class="tabs__header">
+                  <h3 class="tabs__title">Insurance</h3>
+                </div>
+                <div
+                  class="tabs__content | flow text-justify text-neutral-700"
+                  style="--flow-spacer: 1rem"
+                >
+                  <p>
+                    Protect your investment with our comprehensive insurance
+                    options. We offer a range of policies tailored to meet your
+                    specific needs, ensuring peace of mind throughout your
+                    journey.
+                  </p>
+                  <ul class="flow" role="list">
+                    <li>
+                      <span class="fw-500">Step 1:</span> Explore the insurance
+                      plans we offer and choose the one that suits your
+                      requirements.
+                    </li>
+                    <li>
+                      <span class="fw-500">Step 2:</span> Provide necessary
+                      details to customize your coverage.
+                    </li>
+                    <li>
+                      <span class="fw-500">Step 3:</span> Review the policy
+                      terms and finalize your insurance plan.
+                    </li>
+                  </ul>
+                  <p>
+                    After selecting an insurance plan, you will receive a
+                    confirmation email with all relevant details. For any
+                    queries or adjustments, our insurance specialists are ready
+                    to assist you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section | bg-neutral-700 text-neutral-50 py-700">
+        <div class="container | container--narrow flow">
+          <h2 class="section__title | fw-600 fs-h2 text-center">
+            Contact Us To Get Any Information And Be Up-To-Date
+          </h2>
+          <button
+            class="btn btn--huge btn--secondary btn--open-modal | mx-auto"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer | py-700">
+        <div class="container | flow" style="--flow-spacer: 3rem">
+          <a href="#" class="mx-auto">
+            <img src="./assets/logo-white.png" alt="Travel" />
+          </a>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <ul class="footer-nav__list" role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+          <p class="text-center">&copy; Copyright 2024. All Rights Reserved</p>
+        </div>
+      </footer>
+
+      <dialog class="modal">
+        <div class="modal__header">
+          <h3 class="modal__title">Fill The Form To Contact</h3>
+          <button class="btn btn--icon btn--close-modal">
+            <i class="bx bx-x" aria-hidden="true"></i>
+            <span class="visually-hidden">Close modal</span>
+          </button>
+        </div>
+        <div class="modal__content">
+          <form class="flow">
+            <div>
+              <label class="text-neutral-700">First Name</label>
+              <input type="text" placeholder="Jane" />
+            </div>
+            <div>
+              <label class="text-neutral-700">Last name</label>
+              <input type="text" placeholder="Doe" />
+            </div>
+            <div>
+              <label class="text-neutral-700">Email</label>
+              <input type="email" placeholder="jane@email.com" />
+            </div>
+            <button class="btn btn--secondary w-full">Submit</button>
+          </form>
+        </div>
+      </dialog>
+    </main>
+  </body>
+</html>
